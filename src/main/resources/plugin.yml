@@ -1,0 +1,13 @@
+name: AutoEngine
+main: tdiant.bukkit.autoengine.AutoEngine
+version: 1.0
+author: tdiant
+api-version: 1.13
+
+commands:
+  autoengine:
+    aliases: [ae]
+    description: AutoEngine Main Commands
+    usage: /autoengine
+    permission: autoengine.use
+    permission-message: Sorry, this command isn't available without permission.

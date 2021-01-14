@@ -2,6 +2,7 @@ package tdiant.bukkit.autoengine;
 
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
+import tdiant.bukkit.autoengine.command.MainCommand;
 
 public class AutoEngine extends JavaPlugin {
 
@@ -14,6 +15,11 @@ public class AutoEngine extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        //listeners
+
+        //commands
+        this.getServer().getPluginCommand("autoengine").setExecutor(new MainCommand());
+
         getLogger().info(ChatColor.GREEN + "AutoEngine is enabled!");
     }
 

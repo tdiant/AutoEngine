@@ -1,0 +1,6 @@
+service:
+  scanner:
+    nearbyScanner:
+      humanRadius: 10
+      engineRadius: 20
+      period: 30
